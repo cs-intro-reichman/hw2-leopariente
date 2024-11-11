@@ -6,11 +6,11 @@ public class CalcPi {
 		int derometor = 3;
 		boolean isAddition = false;
 
-		for (int i = 0; i < totalNumbers; i++) {
+		for (int i = 1; i < totalNumbers; i++) {
 			if (isAddition) {
-				result += (1.0 / derometor);
+				result += ((double)1 / derometor);
 			} else {
-				result -= (1.0 / derometor);
+				result -= ((double)1 / derometor);
 			}
 			derometor += 2;
 			isAddition = !isAddition;
