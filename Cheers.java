@@ -2,10 +2,10 @@
 public class Cheers {
         public static void main(String[] args) {
             String specialLetters = "AEFHILMNORSX";
-	    String cheer = args[0];
+	    String cheer = args[0].toUpperCase();
             int totalCheers = Integer.parseInt(args[1]);
             for (int i = 0; i < cheer.length(); i++) {
-                char currentChar = Character.toUpperCase(cheer.charAt(i));
+                char currentChar = cheer.charAt(i);
                 String additionWord = specialLetters.indexOf(currentChar) == -1 ? "a  " : "an  ";
                 System.out.println("Give me " + additionWord + currentChar);
             }
